@@ -11,6 +11,8 @@ public class Main {
 
         String nome;
         int idade;
+        double nota;
+
 
         while(true) {
             System.out.println("Nome: ");
@@ -21,10 +23,22 @@ public class Main {
             System.out.println("Idade: ");
             idade = sc.nextInt();
 
+            System.out.println("Nota: ");
+            nota = sc.nextDouble();
+            // escrever a nota com vírgula
+
+            while (nota < 0 | nota >10){
+                System.out.println("Nota inválida! Digite novamente.");
+                nota = sc.nextDouble();
+            }
         }
 
         System.out.println("Continua aqui...");
 
+
+
     }
+
+
 
 }
